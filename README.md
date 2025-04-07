@@ -26,6 +26,7 @@ df.duplicated().sum()
  
 # Step 7 : Changing data formats
 #change the data type to date with given format
+
 df['Dt_Customer'] = pd.to_datetime(df['Dt_Customer'],format='%d-%m-%Y', errors='coerce')
 
 print(df.to_string())
